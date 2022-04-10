@@ -15,6 +15,8 @@ class Dealer(Hand,Deck):
 
   def __init__(self,Hand):
     self.hand = Hand.get_hand()
+    if not isinstance(self.hand,Hand):
+        raise TypeError("Hand is not legit")
 
   def new_card(self):
     self.hand.append(Deck.get_card(self))

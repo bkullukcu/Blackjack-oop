@@ -14,6 +14,8 @@ class Hand(Deck):
 
   def __init__(self,Deck):
     self.hand = Deck.starting_hand()
+    if not isinstance(self.hand,list):
+        raise TypeError("Hand is not legit")
 
   def get_hand(self):
     return list(self.hand)
