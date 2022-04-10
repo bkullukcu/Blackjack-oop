@@ -8,12 +8,19 @@ Original file is located at
 """
 
 import random
-import Dealer
-import Deck
-import Hand
+from Dealer import Dealer
+from Deck import Deck
+from Hand import Hand
+from Player import Player
 
 def main():
     print("To be filled")
+    
+    d = Deck()
+    hp = Hand(d)
+    hd = Hand(d)
+    p = Player(hp)
+    dea = Dealer(hd)
     
 if __name__ == "__main__":
     main()

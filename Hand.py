@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import random
-import Deck
+from Deck import Deck
 
 class Hand(Deck):
 
