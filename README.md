@@ -1,1 +1,3 @@
-# blackjack-oop
+# Blackjack OOP
+
+Blackjack OOP Project
